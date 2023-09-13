@@ -1,38 +1,209 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App{
+  
+  
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+/*Navbar*/
+
+.barra{
+  display: flex;
+  background-color: #30343F;
+  margin: auto;
+  padding: 5px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.barra .logo-nav{
+  height: auto;
+  padding-left: 80px;
+  
+}
+.barra .logo-nav img{
+  width: 300px;
+  height: 60px;
+  padding: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.barra nav ul {
+  margin-right: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.barra nav ul li a{
+  padding: 0 10px;
+  text-decoration: none;
+  color: #FFFF;
+  justify-content: space-between;
+}
+
+
+/*Banner*/
+.banner{
+  background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), 
+  url("./multimedia/funkos-banner.webp");
+  color:aliceblue;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  text-align: start;
+  padding-left:80px ;
+  padding-top: 30px;
+}
+.banner button{
+  width:125px;
+  border-radius: 25px;
+  background-color: #FFFF;
+
+}
+.banner button:hover{
+  background-color: #bbbebd;
+  transition: .2s;
+}
+.banner button a{
+  text-decoration: none;
+  color: #303433;
+}
+
+
+
+
+
+/*Section*/
+
+#cuerpo{
+  justify-items: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  
+}
+#item{
+  display: flex;
   align-items: center;
+}
+
+#cuerpo #item .image{
+  grid-column:2/3;
+  grid-row:1/2;
+  display: flex;
+  
+}
+#cuerpo #item .imagen img{
+  width: 350px;
+  height: 350px;
+}
+#cuerpo #item .info button{
+  background-color: red;
+  padding: 2px 5px;
+  border-radius: 20px;
+}
+#cuerpo #item .info button a{
+  color: white;
+  text-decoration: none;
+
+}
+hr{
+  position: relative;
+  width: 50%;
+  left: 25%;
+  border: 2px solid  red;
+
+}
+
+/*ProductDetails*/
+.count{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.count .sumar, .restar{
+  width: 25px;
+  height: 25px;
+  background-color: #464948;
+  color: #bbbebd;
+  text-align: center;
+}
+
+/* productos relacionados*/
+.relacionados{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.relacionados .card{
+  flex-direction: start;
+}
+
+
+/*Contacto*/
+.contacto{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  padding: 0;
+}
+.contacto input{
+  width: 50%;
+  margin: 5px;
+  border-radius: 25px;
+}
+.contacto textarea{
+  width: 50%;
+  border-radius: 25px;
+}
+
+.contacto button{
+  right: 0;
+  position: relative;
+  width: 70px;
+  height: 35px;
+  background-color: #e90b3e;
+  color: aliceblue;
+}
+
+/*Footer*/
+
+#footer{
+  background-color: #303433;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+
+#footer li{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footer p{
+ margin-bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+#footer a{
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footer img{
+  margin: 20px;
+  width: 100px;
+  height: 100px;
 }

@@ -1,0 +1,27 @@
+
+   [
+    {
+      "name": "Grogu",
+      "image": ["baby-yoda-1.webp","baby-yoda-box.webp","bobbafeth-1.webp","bobbafeth-box.webp","trooper-1.webp","trooper-box.webp","luke-1.webp","luke-box.webp"],
+      "marca": "STAR WARS & THE MANDALORIAN",
+      "id": 0,
+      "precio":"$9999",
+      "p":"Disfruta de una saga que sigue dando personajes a su colección."
+    },
+    {
+      "name": "Vulpix",
+      "image": ["vulpix-1.webp","vulpix-box.webp","pikachu-1.webp","pidgeotto-1.webp","charmander-1.webp","charmander-box.webp","dragonite-1.webp","dragonite-box.webp"],
+      "marca": "POKEMON",
+      "id": 1,
+      "precio":"$9999",
+      "p":"Atrapa a todos los pokémon y coleccionalos"
+    },
+    {
+      "name": "HARRY POTTER",
+      "image":[ "harry-1.webp","harry-box.webp","hermione-1.webp","hermione-box.webp","luna-1.webp","luna-box.webp","snape-patronus-1.webp","snape-patronus-box.webp"],
+      "marca": "Harry Potter",
+      "id": 2,
+      "precio":"$9999",
+      "p": "Colecciona y disfruta de una a ventura mágica"
+    }
+  ]
